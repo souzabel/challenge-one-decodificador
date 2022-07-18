@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Open+Sans:ital,wght@1,300&family=Raleway:ital,wght@1,100&display=swap');
+
+body {
+    font-family: 'Ibarra Real Nova', serif;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(12, 12, 12);
+
+}
+
+.left{
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 620px;
+    width: 50%;
+  
+
+}
+.right{
+    background-color: rgb(177, 213, 244);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height: 620px;
+    width: 50%;
+  
+
+}
+#circle span{
+    position: absolute;
+    top:12%;
+    height: 250px;
+    font-size: 25px;
+    width: max-content;
+    text-align: center;
+    transform-origin: bottom center;
+}
+
+#circle-inner span{
+    position: absolute;
+    top:18%;
+    height: 215px;
+    font-size: 25px;
+    width: max-content;
+    text-align: center;
+    transform-origin: bottom center;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+form{
+    width: 300px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+form textarea {
+    border-radius: 0.25em;
+    margin-top: 1.5px;
+    line-height: 1.5;
+}
+form input{
+    width: 30px;
+    text-align: center;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+label {
+    width: 90px;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 5.5px;
+
+}
+.left article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px ;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(185, 211, 242, 0.386);  
+    backdrop-filter: blur(35px);
+    background-size: 200%;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin-top:40px;
+    margin-left: 15px;
+   }
+.hidden{
+display:none;
+}
+fieldset{
+    background-color: rgba(160, 154, 154, 0.371);  
+    backdrop-filter: blur(18px);
+    width: 400px;
+    height: 420px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block-end: 0;
+    padding-inline-end: 0;
+    padding-inline-start: 0;
+    padding-block-start: 0px;
+}
+legend{
+    margin-inline: auto;
+    padding-inline: 2px;
+}
+h1{
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s;
+}
+a:hover{
+    
+    color: rgb(139, 118, 0);
+}
+h4{
+    font-size: smaller;
+}
+@media (max-width:1025px) {
+    #circle span {
+        top:16%;
+        height: 235px;
+    }
+
+    #circle-inner span {
+        top: 22%;
+        height: 205px;
+    }
+}
+@media (max-width:769px) {
+    #circle span {
+        top:27%;
+        height: 180px;
+        width: auto;
+    }
+
+    #circle-inner span {
+    display: none;
+    }
+    fieldset{
+        width: 250px;
+    }
+    .container{
+        width: 280px;
+        height: 280px;
+    }
+}
+@media (max-width:624px) {
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #circle span {
+     display: none;
+    }
+    .left{
+        height: 100%;
+        width: 100%;
+    }
+   .right{
+       width: 100%;
+   }
+   fieldset{
+    width: 350px;
+}
+    form{
+        display: flex;
+    }
+    .container{
+        width: 280px;
+        height: 280px;
+    }
+}
+@media (max-width:320px) {
+
+    fieldset{
+        width: 300px;
+    }
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    --primaria:rgb(126, 131, 116);
+    --secundaria:rgba(140, 192, 249, 0.356);
+    --terciaria: sandybrown;
+    --bckgd:rgba(255, 228, 196, 0.623) ; 
+}
